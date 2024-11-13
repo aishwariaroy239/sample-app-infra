@@ -22,4 +22,10 @@ ingress:
   host: myapp.local # Add the desired host name
   annotations: {}
   # other optional ingress configurations can go here
+autoscaling:
+  enabled: true  # This enables the autoscaling
+  minReplicas: 1  # Minimum replicas for autoscaling
+  maxReplicas: 5  # Maximum replicas for autoscaling
+  targetCPUUtilizationPercentage: 80  # Target CPU utilization for scaling
+  targetMemoryUtilizationPercentage: 75  # Target Memory utilization for scaling
 
