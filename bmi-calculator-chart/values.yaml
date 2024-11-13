@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: aishwariaroy239/sample-app  # Your Docker Hub repository
+  pullPolicy: Always
+  tag: latest  # Make sure the tag matches the one you're pushing to Docker Hub
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources: {}
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
