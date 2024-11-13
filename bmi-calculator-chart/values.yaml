@@ -17,4 +17,9 @@ affinity: {}
 
 serviceAccount:
   create: true
+ingress:
+  enabled: true
+  host: myapp.local # Add the desired host name
+  annotations: {}
+  # other optional ingress configurations can go here
 
