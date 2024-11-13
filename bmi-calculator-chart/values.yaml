@@ -14,3 +14,7 @@ resources: {}
 nodeSelector: {}
 tolerations: []
 affinity: {}
+
+serviceAccount:
+  create: true
+
